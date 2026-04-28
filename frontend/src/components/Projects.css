@@ -1,0 +1,137 @@
+/* ─── Featured ───────────────────────────────── */
+.projects__featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.projects__featured-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  background: var(--bg-card);
+}
+
+.projects__featured-card:hover {
+  --shadow-color: var(--project-color, var(--accent-primary));
+}
+
+.projects__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.projects__card-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.projects__card-links {
+  display: flex;
+  gap: 12px;
+}
+
+.projects__icon-btn {
+  padding: 8px;
+  border-radius: 0;
+}
+
+.projects__featured-badge {
+  background: var(--project-color, var(--accent-primary));
+  color: var(--text-dark);
+  border-color: var(--text-primary);
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.projects__card-name {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.projects__card-year {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.projects__card-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.projects__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.projects__tech-tag {
+  background: transparent;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* ─── Other Projects ─────────────────────────── */
+.projects__other-title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: var(--border-width) solid var(--text-primary);
+}
+
+.projects__others {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.projects__other-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projects__other-card:hover {
+  --shadow-color: var(--project-color, var(--accent-primary));
+}
+
+.projects__other-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects__other-icon {
+  font-size: 2rem;
+}
+
+.projects__other-name {
+  font-size: 1.2rem;
+}
+
+.projects__other-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+/* ─── CTA ────────────────────────────────────── */
+.projects__cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* ─── Responsive ─────────────────────────────── */
+@media (max-width: 900px) {
+  .projects__featured {
+    grid-template-columns: 1fr;
+  }
+}

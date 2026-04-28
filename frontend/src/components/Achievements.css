@@ -1,0 +1,172 @@
+.ach__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.ach__section-title {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+/* ─── Certifications ─────────────────────────── */
+.ach__cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ach__cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-left-width: 6px;
+  border-left-color: var(--cert-color, var(--accent-primary));
+}
+
+.ach__cert-card:hover {
+  --shadow-color: var(--cert-color);
+}
+
+.ach__cert-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.ach__cert-name {
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.ach__cert-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.ach__cert-badge {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border: var(--border-width) solid var(--text-primary);
+  background: var(--accent-primary);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+  box-shadow: 2px 2px 0px var(--text-primary);
+}
+
+/* ─── Honors ─────────────────────────────────── */
+.ach__honors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ach__honor-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.ach__honor-card:hover {
+  --shadow-color: var(--honor-color);
+}
+
+.ach__honor-icon {
+  font-size: 2.5rem;
+}
+
+.ach__honor-title {
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.ach__honor-sub {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ─── LeetCode Strip ─────────────────────────── */
+.ach__leetcode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background: var(--accent-tertiary);
+  color: var(--text-dark);
+  border-color: var(--text-primary);
+}
+
+.ach__leetcode:hover {
+  --shadow-color: var(--accent-secondary);
+}
+
+.ach__leetcode-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ach__leetcode-icon {
+  font-size: 2rem;
+}
+
+.ach__leetcode-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.ach__leetcode-sub {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.ach__leetcode-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ach__leetcode-count {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.ach__leetcode-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ─── Responsive ─────────────────────────────── */
+@media (max-width: 768px) {
+  .ach__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

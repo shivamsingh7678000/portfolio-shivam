@@ -1,0 +1,114 @@
+.exp__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 10px;
+}
+
+.exp__item {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* ─── Graphic ────────────────────────────────── */
+.exp__graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.exp__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  border: var(--border-width) solid var(--text-primary);
+  background: var(--text-primary);
+  box-shadow: 2px 2px 0px var(--text-primary);
+  z-index: 2;
+  position: relative;
+  margin-top: 6px;
+}
+
+.exp__line {
+  position: absolute;
+  top: 26px;
+  bottom: -6px; /* Connect to next dot */
+  width: var(--border-width);
+  background: var(--border-color);
+  z-index: 1;
+}
+
+/* ─── Content ────────────────────────────────── */
+.exp__content {
+  flex: 1;
+}
+
+.exp__content:hover {
+  --shadow-color: var(--exp-color, var(--accent-primary));
+}
+
+.exp__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.exp__role {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.exp__company {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.exp__period {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.exp__desc {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.exp__desc li {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.exp__desc li::marker {
+  color: var(--accent-secondary);
+}
+
+.exp__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exp__tech-tag {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+/* ─── Responsive ─────────────────────────────── */
+@media (max-width: 768px) {
+  .exp__item {
+    gap: 20px;
+  }
+}
